@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="titulo">Pagina PTC</title>
+</head>
+<style>
+html,body{
+    height: 100%;
+}
+</style>
+<body>
+    <script>
+        function startTimer(cron, display){
+            var timer = cron, minutes, seconds;
+            
+            var tempo = setInterval(function(){
+
+                minutes = parseInt(timer/ 60, 10);
+                seconds = parseInt(timer% 60, 10);
+
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                display.textContent = minutes + ":" + seconds;
+
+                if(--timer < 0 ){
+                timer = cron;            
+                
+            }
+            if((timer==0) && (document.hasFocus())){
+                    var valor = 0.001;
+                    clearInterval(tempo, 0);
+                    document.getElementById("titulo").innerText= "Ganhou R$" + valor ;
+                    setInterval(function(){
+                      location.assign('http://127.0.0.1:5500/view/dashboard.html#completado');
+                    }, 5000);
+
+                }else if((timer==0) && (!document.hasFocus())){
+                    clearInterval(tempo, 0);
+                    window.alert('Saiu da pagina, e perdeu o ganho');
+                }
+                if ((timer!=0) && (!document.hasFocus())){                  
+                        clearInterval(tempo, 0);                    
+                       
+                    setInterval(function(){
+                        window.alert('Saiu da pagina aos '+ display.textContent + ' segundos, e perdeu o ganho...');
+                        location.assign('http://127.0.0.1:5500/view/dashboard.html#incompleto');
+                        window.close();
+                    }, 4000);
+                   
+                }
+
+        },1000);
+
+    }
+    
+
+    window.onload = function (){   
+       
+        var cron = 60/6;
+        var display = document.querySelector('#titulo'); 
+
+        startTimer(cron, display);
+       
+    }
+    var url = location.href.split("#");
+    document.write(url);
+    window.frames[1].location = url[1];
+
+   
+    
+    </script>
+
+ <iframe id="pagina" src="/" frameborder="0" width="100%" height="100%"></iframe>
+
+</body>
+</html>

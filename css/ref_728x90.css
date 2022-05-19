@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%; 
+ 
+}
+
+.ref728x90{
+    width: 100%;
+    
+    background-color: black;
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    color: aliceblue; 
+    
+   
+
+}
+#banners728x90{
+    width: 728px;
+    height: 90px;
+    border: 1px solid white;
+    margin-bottom: 10px;
+ 
+}
+#banners728x90 p{
+   text-align: center;
+}
+div a {
+    text-decoration: none;
+}
+.ad{
+    justify-content: center;
+    background-color: black;
+    display: grid;
+    grid-template-columns: fr;
+
+}

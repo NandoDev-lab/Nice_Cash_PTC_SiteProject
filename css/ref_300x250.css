@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%; 
+ 
+}
+
+.ref300x250{
+    width: 100%; 
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    color: aliceblue; 
+   
+
+   
+
+}
+#banners300x250{
+    width: 300px;
+    height: 250px;
+    border: 1px solid white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+ 
+}
+#banners300x250 p{
+   text-align: center;
+}
+div a {
+    text-decoration: none;
+}
+
+
+footer{
+    margin-bottom: 0px;
+}

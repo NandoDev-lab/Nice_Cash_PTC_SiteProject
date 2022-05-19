@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%; 
+    
+}
+.gpa{
+    display: flex;
+    flex-direction: row; 
+   
+}
+.frames{   
+ display: flex;
+ flex-direction: row;
+
+
+
+}
+.video{
+    width: 400%;
+    height: 400px;
+    color: aliceblue;
+    display: grid; 
+    grid-template-columns: 1fr 1fr;   
+    
+   
+}
+.video div{
+      
+    padding: 15px; 
+    background-color: black;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;    
+   
+
+}
+.tempo div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;    
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    
+}
+.tempo{
+    display: flex;
+    flex-direction: row;
+    width: 100%; 
+   
+    color:aqua;     
+    border: 3px solid white; 
+
+
+    
+}
+.valor{
+    color:aqua;
+}
+

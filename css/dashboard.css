@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%; 
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 95%;  
+}
+
+sidebar {  
+    width: 15%;
+    height: 100%;
+    background-color: rgb(28, 34, 27);
+    border-right: 1px solid gray;    
+}
+
+sidebar p{
+    height: 64px;
+    font-size: 30px;   
+    background-color: rgb(8, 122, 84);
+    border-bottom: 1px solid gray;
+    text-align: center;    
+}
+
+.menu ul{
+    width: 100%;
+    list-style-type: none;   
+}
+
+.menu ul li a{   
+    width: 100%;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.menu ul ul{
+   position: relative;
+   display: none; 
+   }
+
+.menu ul li{
+    width: 100%;
+    padding-top:15px;    
+}
+
+.menu ul li:hover{
+    background-color:  rgb(8, 122, 84);
+}
+
+.menu ul li:hover ul{
+    background-color: rgb(28, 34, 27);
+    display: block;
+    max-width: 100%;
+   
+    margin-top: 0px;
+    padding: 0;
+
+}
+
+main{
+    display: block;
+    width: calc(100% - 300px);
+}
+
+.dashboard header{
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(8, 122, 84);
+    padding: 15px; 
+    border-bottom: 1px solid gray;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.main-content{
+    height: 100%;
+    display: flex;
+    flex-direction: column;  
+    background-color: rgb(219, 224, 220);
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    position: absolute;      
+    background-color: gray;
+   
+}
+
+.painel-ganhos{ 
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;    
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 2px SOLID gray;    
+    font-weight: bolder;
+    background-color: rgb(188, 197, 194);
+}
+
+.saldo{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;   
+}
+
+.ganho-disp{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;  
+   
+}
+.tarefas-feitas{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    
+}
+.tarefas-fazer{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.valor{
+    padding-left: 10px;
+}
+.tarefas{
+    padding-left: 10px;
+}
+.incompleta{
+    padding-left: 10px;
+}
+
+.ad-side{
+    width: 300px;
+    height: 510px;
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+   
+        
+}
+.ad-a{
+    width: 300px;
+    height: 250px;
+    
+}
+.ad-b{
+    margin-top: 10px;
+    width: 300px;
+    height: 250px;
+    
+}
+.ad3{
+    display: flex;
+    flex-direction: row;
+    width: 468px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+}
