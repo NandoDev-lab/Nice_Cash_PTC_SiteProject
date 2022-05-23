@@ -1,7 +1,16 @@
-.video-wall{
+.video-wall{    
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .video{
+    text-align: center;
+    color: aliceblue;
+    background-color: black;
+}
+.painel-GPA{
+    color: aliceblue;
+    background-color: black;
+}
+.gpa{
     background-color: black;
 }
