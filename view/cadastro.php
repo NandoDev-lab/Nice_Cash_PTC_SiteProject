@@ -13,7 +13,7 @@
         <div class="cadastro">
             
               <div class="formulario">          
-                <form>
+                <form  method="$_GET" action="/view/engine.php">
                   <div class="estrutura">
                    <label for="nome">Nome de usuário</label>
                    <input type="text" class="form-control" id="nome" aria-describedby="emailHelp" placeholder="Digite seu Nome de Usuário">
@@ -28,7 +28,7 @@
                 
                
                   <label for="senha">Repita a senha</label>
-                  <input type="password" class="form-control" id="senha" placeholder="Senha">
+                  <input type="password" class="form-control" id="confsenha" placeholder="Senha">
                 
                   <button type="submit" class="btn btn-primary">$ registrar $</button>
                 </div>
