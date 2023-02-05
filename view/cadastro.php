@@ -13,22 +13,22 @@
         <div class="cadastro">
             
               <div class="formulario">          
-                <form  method="$_GET" action="/view/engine.php">
+                <form  method="$_GET" action="http://localhost/repositorios/Nice_Cash_PTC_SiteProject/view/registro_engine.php">
                   <div class="estrutura">
-                   <label for="nome">Nome de usuário</label>
-                   <input type="text" class="form-control" id="nome" aria-describedby="emailHelp" placeholder="Digite seu Nome de Usuário">
+                   <label for="nome">Nome de Usuário</label>
+                   <input type="text" class="form-control" id="nome" name="nome" aria-describedby="emailHelp" placeholder="Digite seu Nome de Usuário">
                 
                    
                    <label for="email">E-mail</label>
-                   <input type="password" class="form-control" id="email" placeholder="Digite um E-mail válido">
+                   <input type="text" class="form-control" id="email" name="email" placeholder="Digite um E-mail válido">
                  
                  
                   <label for="senha">Senha</label>
-                  <input type="password" class="form-control" id="senha" placeholder="Digite uma senha (sem simbolos apenas letras maiúsculas, minúsculas e  números)">
+                  <input type="password" class="form-control" id="senha" name="senha" placeholder="Digite uma senha (sem simbolos apenas letras maiúsculas, minúsculas e  números)">
                 
                
                   <label for="senha">Repita a senha</label>
-                  <input type="password" class="form-control" id="confsenha" placeholder="Senha">
+                  <input type="password" class="form-control" id="confsenha" name="confsenha" placeholder="Senha">
                 
                   <button type="submit" class="btn btn-primary">$ registrar $</button>
                 </div>

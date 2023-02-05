@@ -13,19 +13,19 @@
     <div class="login">      
        <div class="tela-login">
            <div class="form-wrapper">
-        <form>
+        <form method="$_GET" action="http://localhost/repositorios/Nice_Cash_PTC_SiteProject/view/login_engine.php">
             <div class="form-group">
               <label for="email">Email</label>
-              <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+              <input type="email" class="form-control" id="email" name="login" aria-describedby="emailHelp" placeholder="Enter email">
              
             </div>
             <div class="form-group">
               <label for="senha">Senha</label>
-              <input type="password" class="form-control" id="senha" placeholder="Senha">
+              <input type="password" class="form-control" id="senha" name="senha" placeholder="Senha">
             </div>
             
-            <button type="submit" class="btn btn-primary"><a href="view/dashboard.html">Entrar</a></button>
-            <h5>Ainda não tem login?<a class="cadastro" href="/view/cadastro.php">Cadastre-se</a></h5>
+            <button type="submit" class="btn btn-primary">Entrar</button>
+            <h5>Ainda não tem login?<a class="cadastro" href="http://localhost/repositorios/Nice_Cash_PTC_SiteProject/view/cadastro.php">Cadastre-se</a></h5>
           </form>
         </div>
        </div>
